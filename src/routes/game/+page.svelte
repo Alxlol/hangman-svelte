@@ -60,8 +60,9 @@
 {:else if gameState === 'over'}
 	<div class="flex min-h-screen flex-col items-center justify-center gap-4">
 		<p class="text-4xl font-bold">GAME OVER</p>
+		<p class="text-lg">The word was <span class="font-bold">{secretWord}</span></p>
 		<button
-			class="rounded-md bg-orange-500 px-4 py-2"
+			class="rounded-md bg-blue-500 px-4 py-2"
 			on:click={() => {
 				location.reload();
 			}}>Try Again</button>
@@ -69,8 +70,9 @@
 {:else if gameState === 'won'}
 	<div class="flex min-h-screen flex-col items-center justify-center gap-4">
 		<p class="text-4xl font-bold">YOU WON 😁</p>
+		<p class="text-lg">The word was <span class="font-bold">{secretWord}</span></p>
 		<button
-			class="rounded-md bg-orange-500 px-4 py-2"
+			class="rounded-md bg-blue-500 px-4 py-2"
 			on:click={() => {
 				location.reload();
 			}}>Play again</button>
