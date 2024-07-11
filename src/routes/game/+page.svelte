@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { alphabet } from '$lib/functions';
+	import { alphabet } from '$lib/globalData';
 	export let data;
 
 	const secretWord = data.word;
